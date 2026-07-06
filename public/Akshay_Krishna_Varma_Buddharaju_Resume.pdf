@@ -1,0 +1,69 @@
+
+
+Akshay Krishna Varma Buddharaju
++1 9188158169|    akvbuddharaju@gmail.com|    linkedin.com/in/abuddhar|  github.com/AKSHAYKRISHNAVARMA
+Summary
+AI/ML Developer with 1+ year building and deploying production ML and LLM systems in Python. Built RAG and generative-AI
+pipelines with PyTorch, Hugging Face, and LangChain, served via FastAPI and deployed on GCP Vertex AI and AWS SageMaker,
+with Docker, Kubernetes, MLflow, and Airflow across the stack. Delivered measurable results: 85% retrieval-efficiency gain,
+50% LLM latency reduction, 73% vulnerability-risk reduction, and 95% NLP classification accuracy.
+WORK EXPERIENCE
+Machine Learning Engineer , Sports Media INC
+Feb 2026 – Present
+•
+Built a Python-based MCP server providing developer-facing tooling that automates weekly ad-analytics reporting through
+campaign-data ingestion, KPI aggregation, and LLM-generated insights.
+•
+Implemented metrics and automation across 15+ ad-performance metrics, reducing manual reporting effort by 70% by
+eliminating recurring engineering toil.
+Machine Learning Engineer , Decentralized Science LabAug 2025 – Dec 2025
+•
+Reduced vulnerability risk scores by 73% by building an LLM-based code-analysis and automated-remediation pipeline that
+analyzed  50 codebases using multi-metric risk re-scoring.
+•
+Built automated data ingestion and preparation pipelines with Apache Airflow, curating a 1,400-sample dataset to support
+ML training, evaluation, and experimentation.
+Machine Learning Engineer , Kennesaw State UniversityAug 2024 – Apr 2025
+•
+Developed a GNN + BERT Generative AI model in PyTorch for robotic surgical report generation, evaluated at a ROUGE
+score of 0.81 a 28.6% improvement over baseline.
+•
+Improved report quality from ROUGE 0.81 to 0.83 (+2.47%) by integrating SimGNN with template-based training for
+stronger structural alignment.
+Software Engineer Intern - CoreAI , The Home Depot Inc.,May 2025 – Jul 2025
+•
+Designed a video RAG system for Magic Apron and reduced LLM inference latency by 50% through profiling and parallel
+chunk-based processing of large video inputs, improving responsiveness of retrieval-augmented workflows.
+•
+Improved retrieval efficiency by 85% using optimized embedding generation and similarity-search strategies within a
+RAG-based knowledge-retrieval system.
+•
+Built chunk-level inference pipelines that processed  100 long-form videos via batch/parallel processing, achieving 100%
+input coverage for a large, growing customer base.
+Machine Learning Engineer  , Vidhi LabsNov 2023 – Dec 2023
+•
+Developed and fine-tuned PyTorch CNN ensembles (ResNet, VGG19, InceptionV3), improving F1-score by 5% for
+traffic-violation detection under low-latency inference constraints.
+•
+Trained a YOLOv5 object-detection model achieving 92.5% mAP@0.5 for vehicle and sign recognition using optimized
+computer-vision pipelines.
+•
+Reduced inference latency by 55% (detection) and 45% (classification) through INT8 quantization and structured pruning for
+compute-efficient deployment.
+Software Engineer , INV TechnologiesJan 2023 – Oct 2023
+•
+Developed a one-shot face-recognition model (90% accuracy) and deployed it end-to-end on AWS SageMaker with S3-based
+data storage.
+•
+Built a Seq2Seq neural network for fake-news detection, achieving 95% classification accuracy with sequence-modeling
+techniques.
+SKILLS
+Languages: Python, C++, Java, SQL
+SDLC & Tooling:Docker, Kubernetes, Git, GitHub Actions (CI/CD), PyTest, Linux, Apache Airflow, MLflow
+Cloud & Infrastructure: AWS (SageMaker, Lambda, S3), PySpark, MySQL, MongoDB, Neo4j
+ML & AI : Generative AI, LLMs, RAG, Deep Learning, Computer Vision, NLP, Graph Neural Networks, XGBoost, Scikit-learn
+Frameworks & Libraries : PyTorch, TensorFlow, Hugging Face, LangChain, FastAPI, Pandas, NumPy, OpenCV, Matplotlib
+EDUCATION
+Kennesaw State University, Master of Science in Computer Science
+Concentrations: Data Science
+Aug 2024 – Dec 2025
