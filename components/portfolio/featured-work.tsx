@@ -112,7 +112,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 export function FeaturedWork() {
   return (
     <section id="work" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-20 sm:px-8 sm:py-28">
-      <SectionHeading eyebrow="Selected Work" title="Selected AI Engineering Work" className="mb-14" />
+      <SectionHeading eyebrow="Selected Work" title="From Data to Deployment" className="mb-14" />
       <div className="space-y-20">
         {projects.map((p, i) => (
           <ProjectCard key={p.title} project={p} index={i} />
