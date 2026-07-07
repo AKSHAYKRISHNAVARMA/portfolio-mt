@@ -145,15 +145,6 @@ export function Hero() {
               <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background/70 to-transparent" />
             </div>
 
-            {/* Single static label */}
-            <motion.span
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7, duration: 0.5 }}
-              className="glass absolute bottom-5 left-1/2 z-20 -translate-x-1/2 rounded-full border border-primary/30 px-4 py-1.5 text-xs font-medium tracking-wide text-foreground shadow-lg"
-            >
-              AI + Data Science
-            </motion.span>
           </div>
         </motion.div>
       </div>
