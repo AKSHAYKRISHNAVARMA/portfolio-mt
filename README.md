@@ -1,25 +1,33 @@
-# Akshay Krishna Varma Buddharaju — Portfolio
+# portfolio-mt
 
-A responsive one-page portfolio for an AI/ML Engineer, designed for GitHub Pages.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
 
-## Deploy to GitHub Pages
+## Built with v0
 
-1. Add all files in this folder to the root of the `Portfolio` repository.
-2. Commit and push to the `main` branch.
-3. In GitHub, open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select `main` and `/ (root)`, then save.
+This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
 
-The site uses only HTML, CSS, and JavaScript, so no build command is required.
+[Continue working on v0 →](https://v0.app/chat/projects/prj_NGz2QXJQ3QeI4i5u6iuEZZsg2bz7)
 
-## Files
+## Getting Started
 
-- `index.html` — page structure and content
-- `styles.css` — responsive visual design
-- `script.js` — mobile navigation, reveal effects, active navigation state
-- `assets/akshay-profile.png` — hero portrait
-- `assets/Akshay_Krishna_Varma_Buddharaju_Resume.pdf` — résumé download
+First, run the development server:
 
-## Customize
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-Update copy in `index.html`, and replace or add images inside `assets/`. Keep image paths relative so GitHub Pages can serve them correctly.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+## Learn More
+
+To learn more, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.

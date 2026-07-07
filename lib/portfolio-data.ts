@@ -2,7 +2,7 @@ export const profile = {
   firstName: "Akshay Krishna Varma",
   lastName: "Buddharaju",
   shortName: "AKSHAY.",
-  tagline: "AI/ML Engineer | Generative AI | LLMs | RAG | Computer Vision",
+  tagline: "AI/ML Engineer | Data Scientist | Generative AI | LLMs | RAG | Computer Vision",
   email: "akvbuddharaju@gmail.com",
   phone: "+1 918 815 8169",
   resumeUrl: "/Akshay_Krishna_Varma_Buddharaju_Resume.pdf",
@@ -11,14 +11,14 @@ export const profile = {
   availability: "Available for AI/ML Opportunities",
   roles: [
     "AI/ML Engineer",
+    "Data Scientist",
     "Generative AI Developer",
-    "LLM & RAG Engineer",
     "Machine Learning Engineer",
     "Computer Vision Engineer",
   ],
+  roleLine: "AI/ML Engineer • Data Scientist • Generative AI Developer",
   heroDescription:
-    "I build intelligent AI systems that transform complex data into scalable products. My work spans Generative AI, RAG systems, LLM optimization, computer vision, graph neural networks, and production ML infrastructure.",
-  floatingLabels: ["PyTorch", "LLMs", "RAG", "FastAPI", "AWS", "GCP"],
+    "I turn complex data into insight and insight into intelligent products. My work spans exploratory data analysis, predictive modeling, Generative AI and RAG systems, LLM optimization, computer vision, and production ML infrastructure.",
 } as const
 
 export const social = {
@@ -34,6 +34,7 @@ export const navLinks = [
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Education", href: "#education" },
+  { label: "Research", href: "#research" },
   { label: "Contact", href: "#contact" },
 ] as const
 
@@ -48,8 +49,8 @@ export const metrics = [
 export const about = {
   heading: "Building AI Systems That Work Beyond the Notebook",
   paragraphs: [
-    "I'm an AI/ML Engineer focused on designing intelligent systems that move from research ideas to practical deployment. My experience includes Generative AI, retrieval-augmented generation, LLM optimization, computer vision, graph neural networks, NLP, MCP-based AI tooling, and production ML infrastructure.",
-    "I enjoy solving problems across the complete machine learning lifecycle — from data ingestion and experimentation to API development, model deployment, monitoring, and optimization.",
+    "I'm an AI/ML Engineer and Data Scientist focused on designing intelligent systems that move from research ideas to practical deployment. My experience includes Generative AI, retrieval-augmented generation, LLM optimization, computer vision, graph neural networks, NLP, MCP-based AI tooling, and production ML infrastructure.",
+    "I enjoy solving problems across the complete machine learning lifecycle — from data exploration, feature engineering, and model evaluation to API development, deployment, monitoring, and optimization.",
   ],
   orbit: ["LLM", "RAG", "NLP", "CV", "GNN", "MLOps", "Cloud"],
 } as const
@@ -187,36 +188,24 @@ export const experiences: Experience[] = [
   },
 ]
 
-export const skillGroups = [
+export const skillsCore = ["Python", "SQL", "PyTorch", "Scikit-learn", "AWS", "GCP"] as const
+
+export const skillTabs = [
   {
-    category: "AI & Machine Learning",
-    skills: [
-      "Generative AI",
-      "Large Language Models",
-      "RAG",
-      "Deep Learning",
-      "Computer Vision",
-      "NLP",
-      "Graph Neural Networks",
-      "XGBoost",
-      "Scikit-learn",
-    ],
+    category: "Machine Learning & Data Science",
+    skills: ["Python", "SQL", "Scikit-learn", "XGBoost", "Pandas", "NumPy", "Matplotlib", "PySpark", "Machine Learning", "Deep Learning", "Predictive Modeling", "Data Analysis"],
   },
   {
-    category: "Frameworks",
-    skills: ["PyTorch", "TensorFlow", "Hugging Face", "LangChain", "FastAPI", "OpenCV", "Pandas", "NumPy"],
+    category: "Generative AI & NLP",
+    skills: ["Large Language Models", "RAG", "Hugging Face", "LangChain", "NLP", "BERT", "Prompt Engineering", "Embeddings", "Vector Search", "FastAPI", "MCP"],
   },
   {
-    category: "MLOps & Infrastructure",
-    skills: ["Docker", "Kubernetes", "Git", "GitHub Actions", "MLflow", "Apache Airflow", "PyTest", "Linux"],
+    category: "Computer Vision & Deep Learning",
+    skills: ["PyTorch", "TensorFlow", "OpenCV", "CNNs", "YOLO", "Graph Neural Networks", "SimGNN", "Computer Vision", "Object Detection", "Semantic Segmentation"],
   },
   {
-    category: "Cloud & Data",
-    skills: ["AWS SageMaker", "AWS Lambda", "Amazon S3", "GCP Vertex AI", "PySpark", "MySQL", "MongoDB", "Neo4j"],
-  },
-  {
-    category: "Languages",
-    skills: ["Python", "SQL", "C++", "Java"],
+    category: "Cloud & MLOps",
+    skills: ["AWS SageMaker", "AWS Lambda", "Amazon S3", "GCP Vertex AI", "Docker", "Kubernetes", "MLflow", "Apache Airflow", "GitHub Actions", "PyTest", "Linux"],
   },
 ] as const
 
@@ -225,4 +214,19 @@ export const education = {
   school: "Kennesaw State University",
   concentration: "Data Science",
   period: "Aug 2024 – Dec 2025",
+  summary: "Graduate study focused on data science, machine learning, deep learning, and applied AI research.",
+  logo: "/ksu-logo.png",
+  photo: "/graduation.jpg",
+} as const
+
+export const publication = {
+  eyebrow: "Research & Publications",
+  heading: "Research That Connects Deep Learning With Real-World Problems",
+  title: "Semantic Segmentation of Remote Sensing Images of Urban Areas using Deep Learning Methods",
+  journal: "International Journal of Research Publication and Reviews",
+  date: "March 6, 2024",
+  description:
+    "Explored the effectiveness of Attention U-Net for remote sensing image segmentation, focusing on improved feature learning and localization through attention mechanisms. The work examines how attention-enhanced segmentation architectures can produce more refined urban-area segmentation compared with traditional U-Net approaches, with applications in remote sensing and geospatial image analysis.",
+  url: "https://ijrpr.com/uploads/V5ISSUE3/IJRPR23839.pdf",
+  topics: ["Deep Learning", "Computer Vision", "Semantic Segmentation", "Remote Sensing", "Attention U-Net"],
 } as const

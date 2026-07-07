@@ -2,19 +2,19 @@
 
 import Image from "next/image"
 import { useEffect, useState } from "react"
-import { AnimatePresence, motion } from "framer-motion"
+import { AnimatePresence, motion, type Variants } from "framer-motion"
 import { ArrowRight, Download, Mail } from "lucide-react"
 import { profile, social } from "@/lib/portfolio-data"
 import { Magnetic } from "./magnetic"
 import { GithubIcon, LinkedinIcon } from "./brand-icons"
 
-const container = {
+const container: Variants = {
   hidden: {},
   show: { transition: { staggerChildren: 0.12, delayChildren: 0.1 } },
 }
-const item = {
+const item: Variants = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } },
 }
 
 function RotatingRole() {
@@ -43,15 +43,6 @@ function RotatingRole() {
     </span>
   )
 }
-
-const labelPositions = [
-  "left-[-8%] top-[12%]",
-  "right-[-6%] top-[22%]",
-  "left-[-10%] top-[52%]",
-  "right-[-8%] top-[58%]",
-  "left-[6%] bottom-[-4%]",
-  "right-[8%] bottom-[2%]",
-]
 
 export function Hero() {
   return (
@@ -136,10 +127,12 @@ export function Hero() {
           className="order-1 lg:order-2"
         >
           <div className="relative mx-auto w-full max-w-sm">
-            {/* Glow */}
-            <div className="absolute inset-0 -z-10 translate-y-6 scale-95 rounded-[2rem] bg-primary/20 blur-3xl" />
+            {/* Soft radial glow */}
+            <div className="absolute inset-0 -z-10 translate-y-6 scale-95 rounded-[2rem] bg-primary/15 blur-3xl" />
+            {/* Thin offset gold frame detail */}
+            <div aria-hidden className="pointer-events-none absolute -inset-3 rounded-[2.4rem] border border-primary/15" />
             {/* Frame */}
-            <div className="relative overflow-hidden rounded-[2rem] border border-primary/20 shadow-2xl shadow-black/40">
+            <div className="relative overflow-hidden rounded-[2rem] border border-primary/25 shadow-2xl shadow-black/40">
               <div className="absolute inset-0 z-10 rounded-[2rem] ring-1 ring-inset ring-white/10" />
               <Image
                 src={profile.heroImage || "/placeholder.svg"}
@@ -152,21 +145,15 @@ export function Hero() {
               <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background/70 to-transparent" />
             </div>
 
-            {/* Floating labels */}
-            {profile.floatingLabels.map((label, i) => (
-              <motion.span
-                key={label}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: [0, -8, 0] }}
-                transition={{
-                  opacity: { delay: 0.6 + i * 0.1, duration: 0.5 },
-                  y: { duration: 4 + i * 0.5, repeat: Infinity, ease: "easeInOut" },
-                }}
-                className={`glass absolute ${labelPositions[i]} z-20 rounded-full px-3 py-1.5 text-xs font-medium text-foreground shadow-lg`}
-              >
-                {label}
-              </motion.span>
-            ))}
+            {/* Single static label */}
+            <motion.span
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7, duration: 0.5 }}
+              className="glass absolute bottom-5 left-1/2 z-20 -translate-x-1/2 rounded-full border border-primary/30 px-4 py-1.5 text-xs font-medium tracking-wide text-foreground shadow-lg"
+            >
+              AI + Data Science
+            </motion.span>
           </div>
         </motion.div>
       </div>
